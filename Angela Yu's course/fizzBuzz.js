@@ -17,17 +17,21 @@ var count = 1; // we need to add a number that increases by 1 and put in a conta
 //     console.log(output);
 // }
 
-function fizzBuzz () {
+function fizzBuzz() {
 
-   if (count % 3 == 0 && count % 5 == 0) { //Note: it is important on how you order your if-else statements
-        output.push("FizzBuzz");
+  while (count <= 100) {
+
+    if (count % 3 == 0 && count % 5 == 0) { //Note: it is important on how you order your if-else statements
+      output.push("FizzBuzz");
     } else if (count % 5 == 0) {
-        output.push("Buzz");
-    } else if (count % 3 == 0){
-        output.push("Fizz")
+      output.push("Buzz");
+    } else if (count % 3 == 0) {
+      output.push("Fizz")
     } else {
-        output.push(count);
+      output.push(count);
     }
     count++;
-    console.log(output)
+
+  }
+  console.log(output)
 }
