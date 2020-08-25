@@ -19,9 +19,9 @@
   <script type="text/javascript">
   
     function isPangram(input) {
-      let caseSensitive = input.toLowerCase();
+      let ignoreCasing = input.toLowerCase();
       for (let char of 'abcdefghijklmnopqrstuvwxyz') {
-        if(caseSensitive.indexOf(char) === -1) {
+        if(ignoreCasing.indexOf(char) === -1) {
           return false;
         }
       }

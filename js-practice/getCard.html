@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Random Card</title>
+</head>
+<body>
+  <h2>Write a getCard() function which returns a random playing card object, like:</h2>
+  <p>{</p>
+  <p>  value: 'K'</p>
+  <p>  suit: 'clubs' </p>
+  <p>}</p>
+
+  <h2>Pick a Random value from:</h2>
+  <p>----- 2,3,4,5,6,7,8,9,10,J,K,A</p>
+
+  <h2>Pick a Random Suit from:</h2>
+  <p>-----clubs, spades, hearts, diamonds</p>
+  <h2>Return both in an object</h2>
+  
+  <script type="text/javascript">
+  
+    function getCard() {
+      const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'K', 'Q', 'A'];
+      const rndValue = (Math.floor(Math.random() * values.length)); //picks random numbers from 0 - 12
+      // return rndValue; //check if random number is working by calling the function getCard()
+      const value = values[rndValue];
+
+      const suites = ['clubs', 'spades', 'hearts', 'diamonds'];
+      const rndSuite = (Math.floor(Math.random() * suites.length));
+      const suite = suites[rndSuite];
+      // console.log(value, suite); Test to see if it works
+      return {suite: suite, value: value}; 
+    }
+
+  </script>
+</body>
+</html>
