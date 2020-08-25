@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangram</title>
+</head>
+<body>
+  <h2>Pangram Practice</h2>
+  <p>A Pangram is a sentencec that contains every letter of the alphabet, like:</p>
+  <p>"The quick brown fox jumps over the lazy dog"</p>
+
+  <h3>Write a function that is called isPangram, which checks to see if a 
+    given sentence contains every letter of the alphabet. Make sure ignore string casing!</h3>
+
+  <p>isPangram('The five boxing wizards jump quickly') //true</p>
+  <p>isPangram('The five boxing wizards jump quick') //false</p>
+  
+  <script type="text/javascript">
+  
+    function isPangram(input) {
+      let caseSensitive = input.toLowerCase();
+      for (let char of 'abcdefghijklmnopqrstuvwxyz') {
+        if(caseSensitive.indexOf(char) === -1) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+  </script>
+</body>
+</html>
