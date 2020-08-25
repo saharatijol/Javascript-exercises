@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions practice</title>
+</head>
+<body>
+  <h2>Write a isValidPassword function</h2>
+  <p> It accepts 2 arguments: password and username</p>
+  <p>Password must: </p>
+  <ul>
+    <li>be at least 8 characters</li>
+    <li>cannot contain spaces</li>
+    <li>cannot contain the username</li>
+  </ul>
+  <p>If all requirement are met, return true. Otherwise: false</p>
+  
+  
+  <script type="text/javascript">
+  
+  function isValidPassword(password, username) {
+    if (password.length >= 8 && password.indexOf(' ') === -1 && !password.includes(username)) {
+      return true;
+    }
+    return false;
+  }  
+
+  // isValidPassword('89Fjj1nms', 'dogLuvr'); //true
+  // isValidPassword('dogLuvr123!', 'dogLuvr'); //false
+
+  </script>
+
+</body>
+</html>
