@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Average</title>
+</head>
+<body>
+  <h2>Write a function to find the average value in an array of numbers</h2>
+  <p>//avg([0,50]) // 25</p>
+  <p>//avg([75,76,80,95,100]) //85.2</p>
+  
+  <script type="text/javascript">
+  
+  function avg(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length ; i++) {
+      sum += arr[i];
+    }
+    return sum / arr.length;
+  }
+  </script>
+</body>
+</html>
