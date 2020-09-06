@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count Vowels</title>
+</head>
+<body>
+<!-- <h2>Create a function that takes a string and returns the number (count) of vowels contained within it.</h2> -->
+
+<h2>Write a function to take in an integer and write the factors of that integer to the webpage.</h2>
+<input type="text" placeholder="enter a number">
+<h3 id='answer'>The Answer is: </h3>
+
+
+<script type='text/javascript'>
+var vowels = 'aeiouAEIOU'
+var str = "Celebration"
+
+var strArr = str.split("")
+var vowelArr = vowels.split("")
+
+var count = 0;
+var newArr = [];
+for (var i = 0; i < strArr.length; i++) {
+    if (strArr[i].indexOf(vowelArr)) {
+      newArray.push(strArr[i])
+      console.log(newArray[i])
+    count++    
+  }
+}
+console.log(count);
+
+// function factors(int) {
+//   var factorsArr = [];
+//   for (var i = 0; i <= int ; i++ ) {
+//     if(int % i == 0) {
+//       factorsArr.push(i)
+//     }
+//   }
+//   return factorsArr;
+// }
+
+
+
+// // console.log(factors(8))
+// $('#answer').click(function() {
+//   factors(8) 
+
+// });
+
+</script>
+<script type="text/javascript" src="jquery-2.2.4.js"></script>
+</body>
+</html>

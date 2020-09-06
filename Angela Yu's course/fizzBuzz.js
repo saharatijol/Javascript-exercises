@@ -17,21 +17,55 @@ var count = 1; // we need to add a number that increases by 1 and put in a conta
 //     console.log(output);
 // }
 
-function fizzBuzz() {
+// function fizzBuzz() {
+// 	var fizzBuzzArr = [];
+// 	var count = 1;
 
-  while (count <= 100) {
+// 	while (count <= 100) {
+// 		if (count % 3 == 0 && count % 5 == 0) {
+// 			//Note: it is important on how you order your if-else statements
+// 			fizzBuzzArr.push('FizzBuzz');
+// 		} else if (count % 5 == 0) {
+// 			fizzBuzzArr.push('Buzz');
+// 		} else if (count % 3 == 0) {
+// 			fizzBuzzArr.push('Fizz');
+// 		} else {
+// 			fizzBuzzArr.push(count);
+// 		}
+// 		count++;
+// 	}
+// 	console.log(fizzBuzzArr);
+// }
 
-    if (count % 3 == 0 && count % 5 == 0) { //Note: it is important on how you order your if-else statements
-      output.push("FizzBuzz");
-    } else if (count % 5 == 0) {
-      output.push("Buzz");
-    } else if (count % 3 == 0) {
-      output.push("Fizz")
-    } else {
-      output.push(count);
-    }
-    count++;
+// function fizzBuzz(num) {
+// 	for (var i = 1; i < num; i++) {
+// 		if (count % 3 == 0 && count % 5 == 0) {
+// 			//Note: it is important on how you order your if-else statements
+// 			fizzBuzzArr.push('FizzBuzz');
+// 		} else if (count % 5 == 0) {
+// 			fizzBuzzArr.push('Buzz');
+// 		} else if (count % 3 == 0) {
+// 			fizzBuzzArr.push('Fizz');
+// 		} else {
+// 			fizzBuzzArr.push(count);
+// 		}
+// 	count++;
+// 	}
+// }
 
-  }
-  console.log(output)
+// console.log(fizzBuzz(num));
+
+function fizzBuzz(num) {
+	for (var i = 1; i < num; i++) {
+		if (i % 15 === 0) {
+			console.log('FizzBuzz');
+		} else if (i % 5 === 0) {
+			console.log('Bizz');
+		} else if (i % 3 === 0) {
+			console.log('Fizz');
+		} else {
+			console.log(i);
+		}
+		i++;
+	}
 }

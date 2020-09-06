@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Loops Practice</title>
+</head>
+<body>
+<script type='text/javascript'>
+
+// TODO: SUM OF THE ODD NUMBERS. Create a function which returns the total of all odd numbers up to and including n. n will be given as an odd number.
+
+function addOddToN(num) {
+	var sum = 0;
+	for (let i = 1; i <= num; i++) {
+		if (i % 2 === 1) {
+			sum += i
+			console.log(i)
+		}
+	}
+	console.log(sum);
+	return sum;
+}
+//addOddToN(15);
+	
+</script>
+</body>
+</html>
